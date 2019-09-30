@@ -7,7 +7,7 @@ index 283f03d..3fd0155 100755
      name=NAME,
      version_format='{tag}.dev{commitcount}+{gitsha}',
 -    setup_requires=['setuptools-git-version'],
-+    version='0.3.1',
++    version='0.4.0',
      author="Han Wang",
      author_email="wang_han@iapcm.ac.cn",
      description="DPGen: The deep potential generator",
