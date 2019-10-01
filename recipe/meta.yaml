@@ -1,5 +1,5 @@
 {% set name = "dpgen" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d8b9edf6f157848306b371af2efa2e88ab35385be4c43523d9716d92f4657b96
+  sha256: 2421eeb8db54d542be865504d29e56afb893bff1500d5a073b415d00a35852c8
   patches:
     - add_version.patch
 
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=3.5
     - numpy >=1.14.3
-    - dpdata >=0.1.5
+    - dpdata >=0.1.7
     - pymatgen >=2017.9.1
     - ase
     - monty >2.0.0
