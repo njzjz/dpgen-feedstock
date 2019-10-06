@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - dpgen = dpgen.main:main
 
@@ -22,6 +22,7 @@ requirements:
   host:
     - python >=3.5
     - pip
+    - setuptools_scm
     - m2r
   run:
     - python >=3.5
