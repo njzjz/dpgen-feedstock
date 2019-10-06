@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: b76f06aa66335c7b679bfd530716625b313b2730c5b2d5954e8f2e3a7ebc939a
-  patches:
-    - add_version.patch
 
 build:
   number: 0
