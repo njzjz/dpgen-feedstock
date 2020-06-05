@@ -1,18 +1,18 @@
 {% set name = "dpgen" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/deepmodeling/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f7d311dc102eb99ed0870479f8cb2d58b49634ad4e3b7aab5f0ad1ecde76f4c7
+  url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: bcb7d15853e2c25fcbff9a89bcc84712d045385f703b70704dceb8b0425e0570
 
 build:
   number: 0
   noarch: python
-  script: "SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv"
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - dpgen = dpgen.main:main
 
@@ -41,10 +41,10 @@ test:
 
 about:
   home: https://github.com/deepmodeling/dpgen
-  license: LGPL-3.0
+  license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
-  summary: 'The deep potential generator'
+  summary: The deep potential generator
   doc_url: https://github.com/deepmodeling/dpgen
   dev_url: https://github.com/deepmodeling/dpgen
 
