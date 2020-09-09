@@ -3,9 +3,9 @@ About dpgen
 
 Home: https://github.com/deepmodeling/dpgen
 
-Package license: LGPL-3.0
+Package license: LGPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: The deep potential generator
 
