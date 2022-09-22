@@ -26,7 +26,7 @@ requirements:
     - python >=3.5
     - numpy >=1.14.3
     - dpdata >=0.1.10
-    - pymatgen >=2019.1.13
+    - pymatgen >=2019.1.13,<=2022.7.19
     - ase
     - monty >2.0.0
     - paramiko
