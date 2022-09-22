@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/deepmodeling/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 73032ff26a52b97ff95c283dc84cbc4f01efbc70af85b1e8ba763ff33779c10b
+  sha256: a8c138d0faf146f81f707490d0b3965cf9666efc9cb535edded0aaf1b21dfe9d
 
 build:
   number: 0
